@@ -18,6 +18,7 @@ function CartPage() {
       {!loading && !items.length && <div>Your cart is empty.</div>}
       {items.length > 0 && (
         <div
+          className="cart-layout"
           style={{
             display: "grid",
             gridTemplateColumns: "minmax(0,3fr) minmax(0,2fr)",

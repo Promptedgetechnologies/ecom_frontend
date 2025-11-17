@@ -390,6 +390,50 @@
   .navbar-links {
     display: none;
   }
+  .navbar-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  .navbar-left {
+    justify-content: space-between;
+  }
+  .navbar-right {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  .navbar-search {
+    margin: 0.5rem 0 0.25rem;
+    max-width: none;
+    width: 100%;
+  }
+  .navbar-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  .navbar-summary-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .app-main {
+    padding: 0.75rem 0.75rem 1.5rem;
+  }
+  .home-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home-hero-art {
+    margin-top: 0.75rem;
+    flex: 0 0 140px;
+  }
+  .home-promo-strip {
+    padding-inline: 0;
+  }
+  .cart-layout {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 .footer {
