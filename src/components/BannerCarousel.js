@@ -82,8 +82,12 @@ function BannerCarousel() {
   };
 
   return (
-    <section style={{ marginBottom: "1.5rem" }}>
+    <section
+      className="banner-carousel-section"
+      style={{ marginBottom: "1.5rem" }}
+    >
       <div
+        className="banner-carousel-inner"
         style={{
           position: "relative",
           overflow: "hidden",
@@ -92,6 +96,7 @@ function BannerCarousel() {
         }}
       >
         <div
+          className="banner-carousel-track"
           style={{
             display: "flex",
             width: `${banners.length * 100}%`,
@@ -103,6 +108,7 @@ function BannerCarousel() {
           {banners.map((b) => (
             <div
               key={b.id}
+              className="banner-carousel-slide"
               style={{
                 flex: `0 0 ${100 / banners.length}%`,
                 padding: "1.75rem 1.75rem 1.25rem",
@@ -127,6 +133,7 @@ function BannerCarousel() {
               >
                 <div style={{ maxWidth: 520 }}>
                   <h1
+                    className="banner-carousel-title"
                     style={{
                       fontSize: "1.8rem",
                       marginBottom: "0.35rem",
@@ -135,7 +142,10 @@ function BannerCarousel() {
                   >
                     {b.title}
                   </h1>
-                  <p style={{ fontSize: "0.95rem", opacity: 0.9 }}>
+                  <p
+                    className="banner-carousel-subtitle"
+                    style={{ fontSize: "0.95rem", opacity: 0.9 }}
+                  >
                     {b.subtitle}
                   </p>
                   <button
@@ -166,6 +176,7 @@ function BannerCarousel() {
                   </button>
                 </div>
                 <div
+                  className="banner-carousel-sidebox"
                   style={{
                     flex: "0 0 220px",
                     height: "130px",
